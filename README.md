@@ -9,3 +9,9 @@ upload plugin ( js and jquery )
  - jquery插件开发的其中一种方法  使用$.extend
  - 选择文件立即上传
  - 等等
+ 
+ 
+ # 步骤
+ - npm install
+ - node server.js
+ - 访问 localhost:3000/page
