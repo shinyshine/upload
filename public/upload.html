@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上传文件插件</title>
+    <script src="./jquery.js"></script>
+
+    <style>
+        .progress-con {
+            width: 0;
+            display: inline-block;
+            height: 4px;
+            background: red;
+            transition: all 0.2s;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="uploadWrapper">
+        <button type="button" id="uploadBtn">点击上传</button>
+    </div>
+
+
+<!-- <script src="./upload.js"></script> -->
+<script src="./upload-jq.js"></script>
+<script>
+    // const uploadBtn = document.getElementById('uploadBtn');
+    // const uploadWrapper = document.getElementById('uploadWrapper');
+
+    // const upload = new Upload({
+    //     trigger: uploadBtn,
+    //     parent: uploadWrapper,
+    //     auto: true,
+    //     complete: (file) => {
+    //         console.log(file);
+    //     }
+    // })
+
+    const uploadPro = $.uploadPro({
+        trigger: '#uploadBtn',
+        auto: true,
+        complete: (file) => {
+            console.log(file)
+        }
+    })
+
+    
+</script>
+</body>
+</html>
